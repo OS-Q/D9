@@ -14,7 +14,7 @@ int fputc(int ch,FILE *f)//printf重载
 int main(void)
 {	
 	USART1_Config();	 //串口初始化
-	//printf("begin\r\n");
+	printf("begin\r\n");
 	I2C_MPU6050_Init(); 	//IIC接口初始化
   InitMPU6050();   	
 	while(1)
@@ -27,7 +27,7 @@ int main(void)
 		printf("%8d   ",GetData(GYRO_YOUT_H));    //陀螺仪Y轴原始数据
 		printf("%8d   ",GetData(GYRO_ZOUT_H));    //陀螺仪Z轴原始数据
 		printf("temp %8f   ",GetData(TEMP_OUT_H)/340.0+35.0);    //温度
-//		printf("%8d   ",I2C_ByteRead(WHO_AM_I)); 
+		printf("WHO_AM_I %8d   ",I2C_ByteRead(WHO_AM_I)); 
 		printf("\n");
 		delay_ms(1000);
 	}		
