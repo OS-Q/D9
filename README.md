@@ -15,7 +15,8 @@ Edge-Q -> 体系 Q[1,4] -> 节点 M[1,12] -> 平台 W[1,52] -> 设备 D[1,365]
 
 * [文档](docs/)
 * [工程](project/)
-    * [keil工程](project/keil)
+    * [keil工程](project/STM32)
+    * [PIO工程](project/ESP12)
 
 ### [平台资源](https://github.com/sochub)
 
