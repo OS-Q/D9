@@ -1,5 +1,5 @@
 .pio
 .pioenvs
 .piolibdeps
-bin/*.bin
+*.bin
 .vscode/
